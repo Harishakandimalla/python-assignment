@@ -1,0 +1,12 @@
+def separate_sentences(sentence):
+    sentences = sentence.split(".")
+    sentences = [s.strip() for s in sentences if s.strip()]
+    return sentences
+sentence = input("Enter a sentence: ")
+separated_sentences = separate_sentences(sentence)
+print("Separated sentences:")
+for index, sep_sentence in enumerate(separated_sentences, 1):
+    print(f"Sentence {index}: {sep_sentence}")
+
+input : this is a cat
+output : This.Is.A.Cat.
