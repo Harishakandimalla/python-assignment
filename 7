@@ -1,0 +1,11 @@
+def find_longest_sentence(string):
+    sentences = string.split(".")
+    sentences = [s.strip() for s in sentences if s.strip()]
+    longest_sentence = max(sentences, key=len)
+    return longest_sentence
+string = input("Enter a string: ")
+longest_sentence = find_longest_sentence(string)
+print("The longest sentence is:", longest_sentence)
+
+input : My name is Eve,I come from chennai,India,Iam here for research work.
+output : 6
